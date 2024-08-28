@@ -1,12 +1,13 @@
 # conference-room-booking-system
- Conference room booking system
- 
- Conference Room Booking REST API
 
-Overview
-This project is a simple Conference Room Booking REST API built for internal use in a company. It allows users to book conference rooms based on the number of attendees and available time slots. The system also accounts for daily maintenance times for each room, ensuring that no bookings are made during these intervals.
+## Overview
+This project is a REST API for managing conference room bookings within a company. It supports booking for multiple conference rooms with different capacities, ensures no overlap with maintenance schedules, and adheres to specific booking rules.
 
-Features
+## Features
+- **Room Booking**: Book a conference room for a specific date and time.
+- **Available Rooms**: Check available rooms for a specific time range.
+- **Maintenance Intervals**: Automatically blocks rooms during maintenance intervals.
+
 Conference Room Details:
 
 Amaze: Capacity 3 Persons
@@ -18,6 +19,13 @@ Maintenance Timings:
 09:00 - 09:15
 13:00 - 13:15
 17:00 - 17:15
+
+## Technology Stack
+- **Java 17**
+- **Spring Boot**
+- **Maven**
+- **In-Memory Database (H2)**
+
 Rules:
 
 1.Booking can only be done for the current date.
